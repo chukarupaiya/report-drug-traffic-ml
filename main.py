@@ -8,7 +8,6 @@ from fastapi import File, FastAPI, Form
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from typing import Annotated
 from sklearn.cluster import DBSCAN
 import requests
 import haversine as hs
