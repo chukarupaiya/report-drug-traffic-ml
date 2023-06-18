@@ -45,7 +45,7 @@ def latlongdist(a, b):
     distance = hs.haversine(a, b)
     return distance
 def clustering(val):
-        url = 'http://localhost:3001/location/fetch/all'
+        url = 'https://drug-backend.onrender.com/location/fetch/all'
         x = requests.post(url)
         lst = []
         coords = np.array([])
