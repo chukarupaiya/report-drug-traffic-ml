@@ -172,7 +172,8 @@ async def get_body(file: bytes = File(...),lat :str = Form(...),long :str = Form
         confidence/=l
         #print(results)
         dbscanscroe=clustering(cds)
-        nlpscore=nlp(s)
+        #nlpscore=nlp(s)
+        nlpscore=10
         print(dbscanscroe)
         print(confidence)
         final_score=0.5*dbscanscroe + 0.2*confidence + 0.1*nlpscore
